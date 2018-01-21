@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Partapp</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% if Rails.env.development? %>
+    <script src="http://localhost:3808/webpack-dev-server.js"></script>
+  <% end %>
+</head>
+
+  <body>
+    <%= yield %>
+    <%= javascript_include_tag *webpack_asset_paths('application') %>
+</body>
+</html>

@@ -1,0 +1,61 @@
+import React from 'react';
+import { handleLogin } from '../actions/auth';
+import { connect } from 'react-redux';
+import { Link } from 'react-router';
+
+import UserCode from './UserCode'
+import SponsorBox from './SponsorBox'
+import ChildsBox from './ChildsBox'
+
+class Dashboard extends React.Component {
+  render() {
+    return(
+      <div>
+        <h1 className="heading">Dashboard</h1>
+        <div className="row">
+          <div className="col-sm-6 col-xs-12">
+            <UserCode />
+
+            {
+              this.props.auth.sponsor &&
+              <SponsorBox />
+            }
+
+            {
+              !this.props.auth.sponsor &&
+              <div className="sponsor box">
+                The provided Code doesn{"'"}t correspend to any user.
+                <div className="change-code">
+                  <input className="form-control" ref='p_code' type='text' placeholder='PCode' />
+                  <button className="btn btn-success">Use this code</button>
+                </div>
+              </div>
+            }
+          </div>
+          <div className="col-sm-6 col-xs-12">
+            {
+              this.props.auth.childs && this.props.auth.childs.length > 0 &&
+              <ChildsBox auth={this.props.auth} />
+            }
+            {
+              this.props.auth.childs && this.props.auth.childs.length == 0 &&
+              <div className="childs box">
+                <h2>
+                  No one using your code
+                </h2>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = state => {
+  return {
+    auth: state.auth
+  }
+}
+
+export default connect(mapStateToProps)(Dashboard);
