@@ -62,3 +62,5 @@ gem 'activeadmin'
 gem 'cancan' # or cancancan
 gem 'draper'
 gem 'pundit'
+
+gem 'font-awesome-sass'

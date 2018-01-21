@@ -1,6 +1,8 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'alert';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 $p_color: #08AEEA;
 
@@ -31,6 +33,10 @@ nav.navbar-default{
   .navbar-toggle .icon-bar{
     background-color: #fff;
   }
+
+  .fa-sign-out{
+    margin-right: 5px;
+  }
 }
 
 .heading{
@@ -45,6 +51,10 @@ nav.navbar-default{
   padding: 20px;
   font-size: 1.2em;
   background-color: white;
+}
+
+.alert{
+  padding: 15px !important;
 }
 
 

@@ -18,7 +18,12 @@ class BootstrapNavbar extends React.Component {
     let { auth } = this.props;
     if(auth && auth.isAuthenticated) {
       return(
-        <li> <a href='#' onClick={this.logout}>Logout</a> </li>
+        <li>
+          <a href='#' onClick={this.logout}>
+            <i className="fa fa-sign-out" aria-hidden="true"></i>
+            Logout
+          </a>
+        </li>
       )
     } else {
       return(<li> <Link to='/login'>Login</Link> </li>);

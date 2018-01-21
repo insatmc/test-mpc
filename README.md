@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup Dev environment:
 
-Things you may want to cover:
+```bash
+bundle
+rake db:migrate
+rake db:seed
+npm install
+```
 
-* Ruby version
+2 servers needs to be started in the same time:
+```bash
+rails server
+```
 
-* System dependencies
 
-* Configuration
+```bash
+npm run dev_server
+```
 
-* Database creation
+## Routes
 
-* Database initialization
+* ```http://localhost:3000``` for the front-office.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* ```http://localhost:3000/admin``` for back-office, default email/password for activeadmin gem.

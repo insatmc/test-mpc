@@ -1,5 +1,5 @@
 import React from 'react';
-import { handleLogin, getProfileData } from '../actions/auth';
+import { handleLogin, getProfileData } from '../../actions/auth';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import axios from 'axios';

@@ -2,11 +2,11 @@ import React from 'react';
 import { Route, IndexRoute, browserHistory } from 'react-router';
 import App from './containers/App';
 import NoMatch from './components/NoMatch';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
+import Login from './components/Auth/Login';
+import SignUp from './components/Auth/SignUp';
 import { UserAuthWrapper } from 'redux-auth-wrapper';
 import Loading from './components/Loading';
-import Dashboard from './components/Dashboard'
+import Dashboard from './components/Dashboard/Dashboard'
 
 const UserIsAuthenticated = UserAuthWrapper({
   authSelector: state => state.auth,

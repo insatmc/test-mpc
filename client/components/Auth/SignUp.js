@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { handleSignUp } from '../actions/auth';
+import { handleSignUp } from '../../actions/auth';
 import { connect } from 'react-redux';
 
 class SignUp extends React.Component {
