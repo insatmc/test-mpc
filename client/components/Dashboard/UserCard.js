@@ -9,7 +9,7 @@ class UserCard extends Component {
             backgroundImage: this.props.user.image && `url(${this.props.user.image})`
           }
         }></div>
-        { this.props.user.name }
+        <span>{ this.props.user.name }</span>
       </li>
     )
   }

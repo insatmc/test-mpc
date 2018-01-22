@@ -23,4 +23,6 @@ npm run dev_server
 
 * ```http://localhost:3000``` for the front-office.
 
-* ```http://localhost:3000/admin``` for back-office, default email/password for activeadmin gem.
+* ```http://localhost:3000/admin``` for back-office, default email/password for activeadmin gem.<br><br>
+User: ```admin@example.com```<br>
+Password: ```password```
