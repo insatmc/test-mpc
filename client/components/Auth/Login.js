@@ -21,10 +21,9 @@ class Login extends React.Component {
           <form onSubmit={ this.handleSubmit }>
             <input className="form-control" ref='email' type='text' required placeholder='Email' />
             <input className="form-control" ref='password' type='password' required placeholder='Password' />
-            <br />
             <input type='submit' className='btn btn-success' />
           </form>
-          <Link to='/sign_up' className="sign-up-btn">
+          <Link to='/sign_up' className="btn-link">
             New user? Sign Up
           </Link>
         </div>

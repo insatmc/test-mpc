@@ -182,6 +182,17 @@ input:-webkit-autofill {
     }
   }
 
+  input{
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .btn-link{
+    margin-top: 10px;
+    display: block;
+  }
+
   .login-container{
     padding: 40px;
     width: 400px;
@@ -193,6 +204,5 @@ input:-webkit-autofill {
   .sign-up-btn{
     margin-top: 22px;
     display: block;
-    color: $p_color;
   }
 }

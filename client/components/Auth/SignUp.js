@@ -38,9 +38,10 @@ class SignUp extends React.Component {
               this.p_code &&
               <input value={this.p_code} type="hidden" ref='p_code' />
             }
-            <br />
             <input type='submit' className='btn btn-success' value='Sign Up' />
-            <Link to='/login' className='btn grey'>Cancel</Link>
+            <Link to='/login' className='btn-link'>
+              Already registred ? Login
+            </Link>
           </form>
         </div>
       </div>
