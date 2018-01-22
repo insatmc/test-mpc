@@ -23,7 +23,7 @@ class App extends React.Component {
       history.push('/dashboard');
     })
     .fail( () => {
-      if (window.location.indexOf("sign_up") == -1) {
+      if (window.location.href.indexOf("sign_up") == -1) {
         history.push('/login');
       }
     });

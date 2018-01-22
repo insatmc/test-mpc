@@ -28,11 +28,8 @@ class SignUp extends React.Component {
           <h1>Sign Up</h1>
           <form onSubmit={ this.handleSubmit }>
             <input className="form-control" ref='name' type='text' placeholder='Full Name' />
-            <br />
             <input className="form-control" ref='email' type='text' required placeholder='Email' />
-            <br />
             <input className="form-control" ref='password' type='password' required placeholder='Password' />
-            <br />
             {
               !this.p_code &&
               <input className="form-control" ref='p_code' type='text' placeholder='PCode' />

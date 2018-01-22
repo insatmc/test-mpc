@@ -20,7 +20,6 @@ class Login extends React.Component {
           <h1>Login</h1>
           <form onSubmit={ this.handleSubmit }>
             <input className="form-control" ref='email' type='text' required placeholder='Email' />
-            <br />
             <input className="form-control" ref='password' type='password' required placeholder='Password' />
             <br />
             <input type='submit' className='btn btn-success' />
