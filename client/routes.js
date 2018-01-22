@@ -22,6 +22,7 @@ export default (
       <Route path="/dashboard" component={Dashboard} />
       <Route path='/login' component={Login} />
       <Route path='/sign_up' component={SignUp} />
+      <Route path='/sign_up/:p_code' component={SignUp} />
     </Route>
 
     <Route path="*" status={404} component={NoMatch} />

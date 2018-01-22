@@ -11,6 +11,16 @@ export const requestProfileData = (dispatch) => {
   })
 }
 
+export const updateCode = (dispatch, p_code) => {
+  axios.post("/profiles/update_code", {
+    p_code
+  } ,{
+    headers: Auth.retrieveData('authHeaders')
+  }).then((res) =>{
+    dispatch(getProfileData(res.data))
+  })
+}
+
 const logout = () => {
   return { type: 'LOGOUT' }
 }

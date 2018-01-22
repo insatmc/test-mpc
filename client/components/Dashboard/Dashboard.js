@@ -35,9 +35,9 @@ class Dashboard extends React.Component {
             {
               this.props.auth.childs && this.props.auth.childs.length == 0 &&
               <div className="childs box">
-                <h2>
+                <h3>
                   No one using your code yet
-                </h2>
+                </h3>
               </div>
             }
           </div>

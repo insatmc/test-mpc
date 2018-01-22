@@ -71,6 +71,21 @@ nav.navbar-default{
     font-size: 2em;
     display: block;
   }
+
+  .share-link{
+    margin-top: 20px;
+
+    .btn-share{  
+      cursor: pointer;
+    }
+
+    .tooltip{
+      opacity: 1 !important;
+      margin-top: -25px !important;
+      margin-left: 38px !important;
+    }
+  }
+
 }
 
 .sponsor{

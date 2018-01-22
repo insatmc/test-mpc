@@ -4,6 +4,13 @@ import { handleSignUp } from '../../actions/auth';
 import { connect } from 'react-redux';
 
 class SignUp extends React.Component {
+  constructor(props){
+    super(props)
+    if (props.routeParams.p_code) {
+      this.p_code =  props.routeParams.p_code
+    }
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
     let name = this.refs.name.value;
@@ -26,7 +33,14 @@ class SignUp extends React.Component {
             <br />
             <input className="form-control" ref='password' type='password' required placeholder='Password' />
             <br />
-            <input className="form-control" ref='p_code' type='text' placeholder='PCode' />
+            {
+              !this.p_code &&
+              <input className="form-control" ref='p_code' type='text' placeholder='PCode' />
+            }
+            {
+              this.p_code &&
+              <input value={this.p_code} type="hidden" ref='p_code' />
+            }
             <br />
             <input type='submit' className='btn btn-success' value='Sign Up' />
             <Link to='/login' className='btn grey'>Cancel</Link>

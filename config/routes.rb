@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
   get 'profiles/index'
+  post 'profiles/update_code'
 
   default_url_options :host => "example.com"
   get 'app/index'
