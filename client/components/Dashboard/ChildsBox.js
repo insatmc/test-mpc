@@ -28,7 +28,7 @@ class ChildsBox extends Component{
     return(
       <div className="childs box">
         <h2>
-          Users using you code
+          Users using your code
           <span className="badge badge-info">
             {this.props.auth.childs.length}
           </span>
