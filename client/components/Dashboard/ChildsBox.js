@@ -37,7 +37,7 @@ class ChildsBox extends Component{
         {
           this.props.auth.childs.slice(0, this.state.size).map((user) => {
             return (
-              <UserCard user={user} />
+              <UserCard key={user.id} user={user} />
             )
           })
         }
