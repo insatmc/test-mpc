@@ -60,7 +60,7 @@ var config = {
              query: {
                modules: true,
                importLoaders: true,
-               localIdentName: '[local]___[hash:base64:5]'
+               localIdentName: '[local]'
              }
            },
            { loader: "sass-loader" },
