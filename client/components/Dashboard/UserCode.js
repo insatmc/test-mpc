@@ -36,7 +36,7 @@ class UserCode extends Component{
             </div>
           }
 
-          <CopyToClipboard text={"http://localhost:3000/sign_up/"+this.props.auth.p_code}
+          <CopyToClipboard text={window.location.origin+"/sign_up/"+this.props.auth.p_code}
             onCopy={() => this.copyDone()  }>
             <div>
               <a className="btn-link btn-share">
