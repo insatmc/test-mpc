@@ -7,6 +7,8 @@ import { getProfileData, requestProfileData, login, logout } from '../actions/au
 import Auth from 'j-toker';
 import axios from 'axios';
 
+import './style.scss'
+
 
 class App extends React.Component {
   componentDidMount() {

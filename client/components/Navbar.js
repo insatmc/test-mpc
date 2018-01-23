@@ -3,6 +3,8 @@ import { Link } from 'react-router';
 import { handleLogout } from '../actions/auth';
 import { connect } from 'react-redux';
 
+import './style.scss'
+
 class BootstrapNavbar extends React.Component {
   constructor(props){
       super(props);

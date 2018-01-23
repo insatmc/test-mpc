@@ -1,0 +1,96 @@
+.change-code{
+  margin-top: 18px;
+  display: flex;
+  input{
+    margin-right: 5px;
+  }
+}
+
+.p-code{
+  .user-code{
+    font-size: 2em;
+    display: block;
+  }
+
+  .share-link{
+    margin-top: 20px;
+
+    .btn-share{
+      cursor: pointer;
+    }
+
+    .tooltip{
+      opacity: 1 !important;
+      margin-top: -25px !important;
+      margin-left: 38px !important;
+    }
+  }
+
+}
+
+.sponsor{
+  .sponsor-name{
+    font-size: 2em;
+    display: flex;
+  }
+  .user-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .user-image{
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+.childs{
+  h2{
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    .badge{
+      font-size: .6em;
+      margin-left: 5px;
+      margin-top: -6px;
+      border-radius: 50%;
+    }
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    .user-box{
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: calc(20% - 10px);
+      text-align: center;
+      .user-image{
+        margin-bottom: 6px;
+        margin-right: 0;
+      }
+    }
+  }
+  .extand-childs-btn{
+    width: 100%;
+  }
+}
+
+.user-box{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  .user-image{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+  }
+}

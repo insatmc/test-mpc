@@ -8,6 +8,8 @@ import SponsorBox from './SponsorBox'
 import NoSponsorBox from './NoSponsorBox'
 import ChildsBox from './ChildsBox'
 
+import "./style.scss"
+
 class Dashboard extends React.Component {
   render() {
     return(

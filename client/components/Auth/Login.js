@@ -5,6 +5,8 @@ import { Link } from 'react-router';
 import axios from 'axios';
 import Auth from 'j-toker';
 
+import './style.scss'
+
 class Login extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
