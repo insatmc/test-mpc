@@ -48,6 +48,7 @@ class ChildsBox extends Component{
         }
         {
           this.props.auth.childs.length <= this.state.size &&
+          this.props.auth.childs.length > 5 &&
           <a className="btn btn-link extand-childs-btn" onClick={ () => this.expandChilds() }>See less</a>
         }
       </div>
